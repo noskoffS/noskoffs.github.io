@@ -1,0 +1,299 @@
+﻿
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<heard>
+<meta charset="utf-8"/>
+<title>Сериалы</title>
+</head>
+
+<BODY BACKGROUND="3.png">
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #C0C0C0;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #00BFFF;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#srls">Сериалы</a>
+  <a href="https://www.netflix.com/ru/"target="_blank">Netflix</a>
+  <a href="http://torrent-tracks.com"target="_blank">Для "пиратов"</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Поиск..." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+    background-color: #00BFFF;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #00BFFF;
+}
+
+#myInput {
+    border-box: box-sizing;
+    background-image: url('searchicon.png');
+    background-position: 14px 20px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+    position: absolute;
+    left: 70%;
+    top:  7%;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #87CEFA;
+    min-width: 30px;
+    overflow: auto;
+    border: 10px solid #87CEFA;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 15px ;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+
+
+
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Фильтры</button>
+  <div id="myDropdown" class="dropdown-content">
+    
+    <a href="2.html"target="_blank">Сериалы-хорроры</a>
+    <a href="3.html"target="_blank">Русские сериалы</a>
+    <a href="4.html"target="_blank">Комедийыне сериалы</a>
+    <a href="5.html"target="_blank">Сериалы про супергероев</a>
+  
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<HEAD><CENTER><FONT SIZE=7><B>Лучшие сериалы</B></FONT></CENTER></HEAD>
+<p style="text-indent:100px">Топ 5 лучших сериалов:</p>
+ 
+<p style="text-indent:2%"><legend> <FONT SIZE=6><B><a href="https://www.youtube.com/watch?v=7Qh1rXO-rdE"target="_blank">1. Карточный домик(2013)<a></B></FONT></legend></p>
+<p style="text-indent:100px"><IMG SRC="4.jpg"  hspace="100" alt="" align="left" width="140" 
+height="190" style=" border: 0px solid #ffffff;"> </p>
+<p style="text-indent:0px"><FONT SIZE=3>Количество эпизодов: 73 (6 сезонов, хронометраж серии: 50 минут)</p>
+<p style="text-indent:0px"><B>Жанр:</B> политический триллер</p>
+<p style="text-indent:0px"><B>Создатель: </B>Бо Уиллимон («Мартовские иды»)</p>
+<p style="text-indent:0px"><B>В главных ролях:</B> Робин Райт, Майкл Келли,Кевин Спейси, Махершала Али,<br> 
+<p style="text-indent:100px"><blockquote>Амбициозный конгрессмен от Демократической партии Фрэнк Андервуд в обмен на обещание сделать 
+его госсекретарём помогает Гаррету Уокеру стать президентом США. Однако после выборов глава администрации президента Линда Васкез 
+сообщает Андервуду, что он не получит должность.</blockquote></p><br></FONT>
+
+<p style="margin-left: 2%"><legend> <FONT SIZE=6><B><a href="https://www.youtube.com/watch?v=RPqH2lAl96A"target="_blank">2. 13 причин почему (2017)<a></B></FONT></legend></p>
+<p style="text-indent:100px"><IMG SRC="5.jpg" hspace="100" alt="" align="left" width="140" 
+height="190" style=" border: 0px solid #ffffff;"> </p> 
+<p style="text-indent:0px"><FONT SIZE=3>Количество эпизодов: 36 (3 сезона, хронометраж серии: 60 минут)</p>
+<p style="text-indent:0px"><B>Жанр:</B> драма</p>
+<p style="text-indent:0px"><B>Создатели::</B> Брайан Йорки, Джей Эшер (автор романа)</p>
+<p style="text-indent:100px"><blockquote>Однажды Клэй Дженсен находит на пороге своего дома коробку с аудиокассетами, записанными Ханной Бейкер. 
+Он был влюблен в эту девушку в школе, пока она однажды не покончила жизнь самоубийством. В своих записях Ханна указала 13 причин, которые толкнули 
+её на это. И Клэй - одна из них. Действия происходят в школе Либерти. Новая ученица – Ханна Бейкер – покончила с собой, это событие станет 
+центральной линией первого сезона.</p></blockquote></p></p><br>
+
+<p style="margin-left: 2%"><legend> <FONT SIZE=6><B><a href="https://www.youtube.com/watch?v=3C8UpDgA8I4&feature=emb_logo"target="_blank">3. Оранжевый — хит сезона (2013)<a></B></FONT></legend></p>
+<p style="text-indent:100px"><IMG SRC="6.jpg" hspace="100" alt="" align="left" width="140" 
+height="190" style=" border: 0px solid #ffffff;"> </p> 
+<p style="text-indent:0px"><FONT SIZE=3>Количество эпизодов: 91 (7 сезонов, хронометраж серии: 50 минут)</p>
+<p style="text-indent:0px"><B>Жанр: </B>драма, комедия (это не ситком, никакого легкого юмора и абсурда. И вообще смешного — не так много)</p>
+<p style="text-indent:0px"><B>Режиссёр:</B> Дин ДеБлуа, Крис Сандерс</p>
+<p style="text-indent:0px"><B>В ролях:</B> Тейлор Шиллинг, Лора Припон, Мишель Херст, Майкл Джей Харни </p>
+<p style="text-indent:100px"><blockquote>Пайпер Чапман отправляется в тюрьму на пятнадцать месяцев. Причина — десять лет назад девушка помогла своей 
+бывшей любовнице с контрабандой наркотиков. Юношеская глупость дает о себе знать в самый неподходящий момент, когда у Пайпер новая счастливая 
+жизнь. </p></blockquote><br>
+
+<p style="margin-left:2%"><legend> <FONT SIZE=6><B><a href="https://www.youtube.com/watch?v=LxCl-cnm3KM&feature=emb_logo"target="_blank">4. Лемони Сникет: 33 несчастья (2017)<a></B></FONT></legend></p>
+<p style="text-indent:100px"><IMG SRC="7.jpg" hspace="100" alt="" align="left" width="140" 
+height="190" style=" border: 0px solid #ffffff;"> </p> 
+<p style="text-indent:0px"><FONT SIZE=3>Количество эпизодов: 25 (3 сезона, хронометраж серии: 50 минут)</p>
+<p style="text-indent:0px"><B>Жанр:</B> черная комедия, приключения, драма, триллер</p>
+<p style="text-indent:0px"><B>Режиссёр:</B> Томм Мур</p>
+<p style="text-indent:0px"><B>В ролях:</B> Нил Патрик Харрис, Малина Вайсман, Луис Хайнс, Пресли Смит<br>
+<p style="text-indent:100px"><blockquote>Детей отправляют под опеку дальнего родственника — эпатажного и чокнутого графа Олафа. Жизнь детей превращается в кошмар: Олаф не только заставляет сирот обслуживать огромный полуразвалившийся дом, но и шантажом, 
+обманом и угрозами пытается завладеть богатством их родителей.</p></blockquote><br>
+
+<p style="margin-left:2%"><legend> <FONT SIZE=6><B><a href="https://www.youtube.com/watch?v=QHLe1tpHfW4&feature=emb_logo"target="_blank">5. Половое воспитание (2019) <a></B></FONT></legend></p>
+<p style="text-indent:100px"><IMG SRC="8.jpg" hspace="100" alt="" align="left" width="140" 
+height="190" style=" border: 0px solid #ffffff;"> </p> 
+<p style="text-indent:0px"><FONT SIZE=3>Количество эпизодов: 16 (2 сезона, хронометраж серии: 45 минут)</p>
+<p style="text-indent:0px"><B>Жанр:</B> комедия, подростковая драма</p>
+<p style="text-indent:0px"><B>Режиссёр:</B> Лори Нанн</p>
+<p style="text-indent:0px"><B>В ролях:</B> Эйса Баттерфилд, Эмма Маккей, Джулиан Андерсон, Ншути Гатва<br>
+<p style="text-indent:100px"><blockquote>Отис — тихий скромный тинейджер. 
+Но судьба сталкивает героя с Мэйв — начитанной неформалкой, живущей в трейлере в полнейшем одиночестве. Девушке очень нужны деньги, и ее 
+блестящий ум быстро генерирует идею стартапа: Отис банально умеет слушать и видеть связь между комплексами, 
+семейным бэкграундом и постельными трудностями сверстников.!</p></blockquote>
+
+
+
+
+
+
+
+</FONT>
+</body>
+</html>
